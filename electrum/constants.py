@@ -108,6 +108,10 @@ class BitcoinMainnet(AbstractNet):
     ]
 
 
+class ChemcryptMainnet(BitcoinMainnet):
+    SEGWIT_HRP = "cc"
+
+
 class BitcoinTestnet(AbstractNet):
 
     NET_NAME = "testnet"
@@ -205,3 +209,7 @@ def set_testnet():
 def set_regtest():
     global net
     net = BitcoinRegtest
+
+def set_chemcrypt():
+    global net
+    net = ChemcryptMainnet
