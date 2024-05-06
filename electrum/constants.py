@@ -179,6 +179,7 @@ class BitcoinSimnet(BitcoinTestnet):
 class ChemcryptSimnet(BitcoinSimnet):
     NET_NAME = "chemcryptsimnet"
     SEGWIT_HRP = "ccsb"
+    GENESIS = "5813c3581db222f29671e00c0616e37dc9c601e9865d0b3bf2bdb57725cc952c"
 
 
 class BitcoinSignet(BitcoinTestnet):
