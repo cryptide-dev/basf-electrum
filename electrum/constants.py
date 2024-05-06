@@ -109,6 +109,7 @@ class BitcoinMainnet(AbstractNet):
 
 
 class ChemcryptMainnet(BitcoinMainnet):
+    NET_NAME = "chemcrypt"
     SEGWIT_HRP = "cc"
 
 
@@ -175,6 +176,11 @@ class BitcoinSimnet(BitcoinTestnet):
     LN_DNS_SEEDS = []
 
 
+class ChemcryptSimnet(BitcoinSimnet):
+    NET_NAME = "chemcryptsimnet"
+    SEGWIT_HRP = "ccsb"
+
+
 class BitcoinSignet(BitcoinTestnet):
 
     NET_NAME = "signet"
@@ -213,3 +219,7 @@ def set_regtest():
 def set_chemcrypt():
     global net
     net = ChemcryptMainnet
+
+def set_chemcryptsimnet():
+    global net
+    net = ChemcryptSimnet

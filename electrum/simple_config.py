@@ -265,6 +265,9 @@ class SimpleConfig(Logger):
         elif self.get('chemcrypt'):
             path = os.path.join(path, 'chemcrypt')
             make_dir(path, allow_symlink=False)
+        elif self.get('chemcryptsimnet'):
+            path = os.path.join(path, 'chemcryptsimnet')
+            make_dir(path, allow_symlink=False)
 
         self.logger.info(f"electrum directory {path}")
         return path

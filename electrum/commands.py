@@ -1592,6 +1592,7 @@ def add_global_options(parser):
     group.add_argument("--simnet", action="store_true", dest="simnet", default=False, help="Use Simnet")
     group.add_argument("--signet", action="store_true", dest="signet", default=False, help="Use Signet")
     group.add_argument("--chemcrypt", action="store_true", dest="chemcrypt", default=False, help="Use Chemcrypt")
+    group.add_argument("--chemcryptsimnet", action="store_true", dest="chemcryptsimnet", default=False, help="Use Chemcrypt simnet")
     group.add_argument("-o", "--offline", action="store_true", dest=SimpleConfig.NETWORK_OFFLINE.key(), default=None, help="Run offline")
     group.add_argument("--rpcuser", dest=SimpleConfig.RPC_USERNAME.key(), default=argparse.SUPPRESS, help="RPC user")
     group.add_argument("--rpcpassword", dest=SimpleConfig.RPC_PASSWORD.key(), default=argparse.SUPPRESS, help="RPC password")

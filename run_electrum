@@ -391,6 +391,8 @@ def main():
         constants.set_signet()
     elif config.get('chemcrypt'):
         constants.set_chemcrypt()
+    elif config.get('chemcryptsimnet'):
+        constants.set_chemcryptsimnet()
 
     # check if we received a valid payment identifier
     uri = config_options.get('url')
